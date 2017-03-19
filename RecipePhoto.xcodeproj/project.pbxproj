@@ -13,6 +13,8 @@
 		67B092211E3E32E80011FCB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B0921F1E3E32E80011FCB5 /* Main.storyboard */; };
 		67B092231E3E32E80011FCB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B092221E3E32E80011FCB5 /* Assets.xcassets */; };
 		67B092261E3E32E80011FCB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B092241E3E32E80011FCB5 /* LaunchScreen.storyboard */; };
+		67B092321E3E36C00011FCB5 /* RecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */; };
+		67B092351E3E3EA20011FCB5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B092341E3E3EA20011FCB5 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		67B092221E3E32E80011FCB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67B092251E3E32E80011FCB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67B092271E3E32E80011FCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B092301E3E36C00011FCB5 /* RecipeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeCollectionViewController.h; sourceTree = "<group>"; };
+		67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeCollectionViewController.m; sourceTree = "<group>"; };
+		67B092331E3E3EA20011FCB5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		67B092341E3E3EA20011FCB5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,12 @@
 		67B092151E3E32E80011FCB5 /* RecipePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				67B092191E3E32E80011FCB5 /* AppDelegate.h */,
-				67B0921A1E3E32E80011FCB5 /* AppDelegate.m */,
-				67B0921C1E3E32E80011FCB5 /* ViewController.h */,
-				67B0921D1E3E32E80011FCB5 /* ViewController.m */,
 				67B0921F1E3E32E80011FCB5 /* Main.storyboard */,
+				67B092331E3E3EA20011FCB5 /* DetailViewController.h */,
+				67B092341E3E3EA20011FCB5 /* DetailViewController.m */,
+				67B092301E3E36C00011FCB5 /* RecipeCollectionViewController.h */,
+				67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */,
 				67B092221E3E32E80011FCB5 /* Assets.xcassets */,
-				67B092241E3E32E80011FCB5 /* LaunchScreen.storyboard */,
-				67B092271E3E32E80011FCB5 /* Info.plist */,
 				67B092161E3E32E80011FCB5 /* Supporting Files */,
 			);
 			path = RecipePhoto;
@@ -74,7 +78,13 @@
 		67B092161E3E32E80011FCB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				67B092271E3E32E80011FCB5 /* Info.plist */,
+				67B092241E3E32E80011FCB5 /* LaunchScreen.storyboard */,
+				67B092191E3E32E80011FCB5 /* AppDelegate.h */,
+				67B0921A1E3E32E80011FCB5 /* AppDelegate.m */,
 				67B092171E3E32E80011FCB5 /* main.m */,
+				67B0921C1E3E32E80011FCB5 /* ViewController.h */,
+				67B0921D1E3E32E80011FCB5 /* ViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B092351E3E3EA20011FCB5 /* DetailViewController.m in Sources */,
+				67B092321E3E36C00011FCB5 /* RecipeCollectionViewController.m in Sources */,
 				67B0921E1E3E32E80011FCB5 /* ViewController.m in Sources */,
 				67B0921B1E3E32E80011FCB5 /* AppDelegate.m in Sources */,
 				67B092181E3E32E80011FCB5 /* main.m in Sources */,
@@ -310,6 +322,7 @@
 				67B0922C1E3E32E80011FCB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
