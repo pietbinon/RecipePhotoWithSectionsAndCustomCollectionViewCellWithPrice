@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
 @property (nonatomic) NSString *recipeImageName;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end
