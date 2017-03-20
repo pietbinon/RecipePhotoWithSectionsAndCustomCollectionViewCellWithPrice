@@ -6,16 +6,16 @@
 //  Copyright © 2017 Angie Linton. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
 
 
 
 @interface Food : NSObject
 
-@property (nonatomic) NSString *imageName;
+@property (nonatomic) UIImage *image;
 @property (nonatomic) NSString *descriptionFood;
 
-- (instancetype)initWithDescription: (NSString *) description andImageName: (NSString *) imageName;
+- (instancetype)initWithDescription: (NSString *) description andImage: (UIImage *) image;
 
 
 

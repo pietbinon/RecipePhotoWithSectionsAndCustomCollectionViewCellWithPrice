@@ -15,10 +15,9 @@
 + (NSArray *) returnArrayOfFoods
 {
     return @[
-             [[Food alloc] initWithDescription: @"hamburger" andImageName: @"hamburger"],
-             [[Food alloc] initWithDescription: @"risotto" andImageName: @"mushroom_risotto"],
-             [[Food alloc] initWithDescription: @"curry" andImageName: @"vegetable_curry"]
-             ];
+             [[Food alloc] initWithDescription: @"hamburger" andImage: [UIImage imageNamed: @"hamburger.jpg"]],
+             [[Food alloc] initWithDescription: @"risotto" andImage: [UIImage imageNamed: @"mushroom_risotto.jpg"]],
+             [[Food alloc] initWithDescription: @"curry" andImage: [UIImage imageNamed: @"vegetable_curry.jpg"]]];
 }
 
 
