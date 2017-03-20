@@ -16,7 +16,7 @@
 {
     self = [super init];
     if (self) {
-        _description = description;
+        _descriptionFood = description;
         _imageName = imageName;
     }
     return self;

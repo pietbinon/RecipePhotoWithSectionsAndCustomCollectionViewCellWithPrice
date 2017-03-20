@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    self.recipeImageView.image = [UIImage imageNamed:self.recipeImageName];
+    self.descriptionLabel.text = self.recipeImageName.description;
 }
 
 @end

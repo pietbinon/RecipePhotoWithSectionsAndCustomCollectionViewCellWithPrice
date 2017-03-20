@@ -13,7 +13,7 @@
 @interface Food : NSObject
 
 @property (nonatomic) NSString *imageName;
-@property (nonatomic) NSString *description;
+@property (nonatomic) NSString *descriptionFood;
 
 - (instancetype)initWithDescription: (NSString *) description andImageName: (NSString *) imageName;
 
