@@ -108,4 +108,47 @@
     return cell;
 }
 
+
+//Section title - For this don't forget to add an image view before the label!!!
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView *reusableview = nil;
+    
+    if (kind == UICollectionElementKindSectionHeader) {
+        RecipeCollectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+        NSString *title = [[NSString alloc]initWithFormat:@"Recipe Group #%li", indexPath.section + 1];
+        headerView.title.text = title;
+        
+//        //Image stuff for the bottom...
+//        UIImage *headerImage = [UIImage imageNamed:@"header_banner.png"];
+//        headerView.backgroundImage.image = headerImage;
+        
+        reusableview = headerView;
+    }
+    
+//    //More stuff for the footer...
+//    if (kind == UICollectionElementKindSectionFooter) {
+//        UICollectionReusableView *footerview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"FooterView" forIndexPath:indexPath];
+//        
+//        reusableview = footerview;
+//    }
+    
+    return reusableview;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

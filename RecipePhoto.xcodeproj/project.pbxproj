@@ -17,6 +17,7 @@
 		67B092351E3E3EA20011FCB5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B092341E3E3EA20011FCB5 /* DetailViewController.m */; };
 		77C164BB1E7F1DBA00285F92 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C164BA1E7F1DBA00285F92 /* Food.m */; };
 		77C164BE1E7F1E5A00285F92 /* FoodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C164BD1E7F1E5A00285F92 /* FoodCollection.m */; };
+		77F738E31E819D860016AD6B /* RecipeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F738E21E819D860016AD6B /* RecipeCollectionHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		77C164BA1E7F1DBA00285F92 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 		77C164BC1E7F1E5A00285F92 /* FoodCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCollection.h; sourceTree = "<group>"; };
 		77C164BD1E7F1E5A00285F92 /* FoodCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCollection.m; sourceTree = "<group>"; };
+		77F738E11E819D860016AD6B /* RecipeCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeCollectionHeaderView.h; sourceTree = "<group>"; };
+		77F738E21E819D860016AD6B /* RecipeCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeCollectionHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				77C164BA1E7F1DBA00285F92 /* Food.m */,
 				77C164BC1E7F1E5A00285F92 /* FoodCollection.h */,
 				77C164BD1E7F1E5A00285F92 /* FoodCollection.m */,
+				77F738E11E819D860016AD6B /* RecipeCollectionHeaderView.h */,
+				77F738E21E819D860016AD6B /* RecipeCollectionHeaderView.m */,
 			);
 			path = RecipePhoto;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				77C164BB1E7F1DBA00285F92 /* Food.m in Sources */,
 				67B0921B1E3E32E80011FCB5 /* AppDelegate.m in Sources */,
 				67B092181E3E32E80011FCB5 /* main.m in Sources */,
+				77F738E31E819D860016AD6B /* RecipeCollectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
