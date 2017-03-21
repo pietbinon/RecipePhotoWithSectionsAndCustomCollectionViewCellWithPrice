@@ -2,8 +2,8 @@
 //  RecipeCollectionViewController.m
 //  RecipePhoto
 //
-//  Created by Angie Linton on 2017-01-29.
-//  Copyright © 2017 Angie Linton. All rights reserved.
+//  Created by Pierre Binon on 2017-01-29.
+//  Copyright © 2017 Pierre Binon. All rights reserved.
 //
 
 #import "RecipeCollectionViewController.h"
@@ -60,7 +60,7 @@
          
          
          DetailViewController *detailViewController = segue.destinationViewController;
-         NSIndexPath *indexPath = [indexPaths objectAtIndex:0];
+         NSIndexPath *indexPath = [indexPaths objectAtIndex: 0];
          
          // Pass the selected object to the new view controller.
          Food *foodselected = self.foods[indexPath.section][indexPath.row];
