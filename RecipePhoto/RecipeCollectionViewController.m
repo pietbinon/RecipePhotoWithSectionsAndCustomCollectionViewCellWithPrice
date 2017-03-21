@@ -16,12 +16,14 @@
 
 
 
-@interface RecipeCollectionViewController ()
-//    NSArray *recipeImages;
-    @property (nonatomic) NSArray <Food *> *foods;
 
+@interface RecipeCollectionViewController ()
+
+//    NSArray *recipeImages;
+@property (nonatomic) NSArray *foods;
 
 @end
+
 
 
 
@@ -36,8 +38,10 @@
     self.foods = [FoodCollection returnArrayOfFoods];
     
 //    self.foods = [NSArray arrayWithObjects:@"angry_birds_cake.jpg", @"creme_brelee.jpg", @"egg_benedict.jpg", @"full_breakfast.jpg", @"green_tea.jpg", @"ham_and_cheese_panini.jpg", @"ham_and_egg_sandwich.jpg", @"hamburger.jpg", @"instant_noodle_with_egg.jpg", @"japanese_noodle_with_pork.jpg", @"mushroom_risotto.jpg", @"noodle_with_bbq_pork.jpg", @"starbucks_coffee.jpg", @"thai_shrimp_cake.jpg", @"vegetable_curry.jpg", @"white_chocolate_donut.jpg", nil];
-   }
-
+    
+    
+//    recipeImages = [NSArray arrayWithObjects:@"angry_birds_cake.jpg", @"creme_brelee.jpg", @"egg_benedict.jpg", @"full_breakfast.jpg", @"green_tea.jpg", @"ham_and_cheese_panini.jpg", @"ham_and_egg_sandwich.jpg", @"hamburger.jpg", @"instant_noodle_with_egg.jpg", @"japanese_noodle_with_pork.jpg", @"mushroom_risotto.jpg", @"noodle_with_bbq_pork.jpg", @"starbucks_coffee.jpg", @"thai_shrimp_cake.jpg", @"vegetable_curry.jpg", @"white_chocolate_donut.jpg", nil];
+}
 
 
  // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -53,34 +57,47 @@
          NSIndexPath *indexPath = [indexPaths objectAtIndex:0];
          
          // Pass the selected object to the new view controller.
-         detailViewController.foodImage = [self.foods objectAtIndex:indexPath.row].image;
-         detailViewController.recipeImageName = [self.foods objectAtIndex: indexPath.row].descriptionFood;
+         Food *foodselected = self.foods[indexPath.section][indexPath.row];
+         
+         detailViewController.foodImage = foodselected.image;
+         detailViewController.recipeImageName = foodselected.descriptionFood;
+         
+//         detailViewController.foodImage = [self.foods objectAtIndex: indexPath.row];//.image];
+//         detailViewController.recipeImageName = [self.foods objectAtIndex: indexPath.row];//.descriptionFood;
          // [self.collectionView deselectItemAtIndexPath:indexPath animated:NO];
      }
  }
-
 
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     //return arrayName.count;
-    return 1;
-}
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    //return 1;
     return self.foods.count;
 }
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    //return self.foods.count;
+    //NSNumber *number = self.foods[section];
+    //return [number integerValue];
+    return [[self.foods objectAtIndex: section] count];
+}
+
+
 //provides the data for the collection view cells
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell
     UIImageView *recipeImageView = (UIImageView *)[cell viewWithTag:100];
-    recipeImageView.image = [self.foods objectAtIndex:indexPath.row].image;
+    //recipeImageView.image = [self.foods objectAtIndex: indexPath.row];//.image;
+    //recipeImageView.image = [UIImage imageNamed: [self.foods[indexPath.section] objectAtIndex: indexPath.row]];
+    Food *foodselected = self.foods[indexPath.section][indexPath.row];
+    recipeImageView.image = foodselected.image;
     
     return cell;
 }
-
 
 @end
