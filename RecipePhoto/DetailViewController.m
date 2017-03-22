@@ -18,7 +18,7 @@
 
 @implementation DetailViewController
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
     [super viewDidLoad];
     self.recipeImageView.image = self.foodImage;
     self.descriptionLabel.text = self.recipeImageName;

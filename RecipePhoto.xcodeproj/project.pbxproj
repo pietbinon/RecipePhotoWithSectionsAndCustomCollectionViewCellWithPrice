@@ -15,6 +15,7 @@
 		67B092261E3E32E80011FCB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B092241E3E32E80011FCB5 /* LaunchScreen.storyboard */; };
 		67B092321E3E36C00011FCB5 /* RecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */; };
 		67B092351E3E3EA20011FCB5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B092341E3E3EA20011FCB5 /* DetailViewController.m */; };
+		770666A21E82F33900DD4F1E /* FoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 770666A11E82F33900DD4F1E /* FoodCell.m */; };
 		77C164BB1E7F1DBA00285F92 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C164BA1E7F1DBA00285F92 /* Food.m */; };
 		77C164BE1E7F1E5A00285F92 /* FoodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C164BD1E7F1E5A00285F92 /* FoodCollection.m */; };
 		77F738E31E819D860016AD6B /* RecipeCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F738E21E819D860016AD6B /* RecipeCollectionHeaderView.m */; };
@@ -35,6 +36,8 @@
 		67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeCollectionViewController.m; sourceTree = "<group>"; };
 		67B092331E3E3EA20011FCB5 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		67B092341E3E3EA20011FCB5 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		770666A01E82F33900DD4F1E /* FoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCell.h; sourceTree = "<group>"; };
+		770666A11E82F33900DD4F1E /* FoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCell.m; sourceTree = "<group>"; };
 		77C164B91E7F1DBA00285F92 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
 		77C164BA1E7F1DBA00285F92 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 		77C164BC1E7F1E5A00285F92 /* FoodCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCollection.h; sourceTree = "<group>"; };
@@ -74,18 +77,20 @@
 			isa = PBXGroup;
 			children = (
 				67B0921F1E3E32E80011FCB5 /* Main.storyboard */,
-				67B092331E3E3EA20011FCB5 /* DetailViewController.h */,
-				67B092341E3E3EA20011FCB5 /* DetailViewController.m */,
-				67B092301E3E36C00011FCB5 /* RecipeCollectionViewController.h */,
-				67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */,
-				67B092221E3E32E80011FCB5 /* Assets.xcassets */,
-				67B092161E3E32E80011FCB5 /* Supporting Files */,
 				77C164B91E7F1DBA00285F92 /* Food.h */,
 				77C164BA1E7F1DBA00285F92 /* Food.m */,
 				77C164BC1E7F1E5A00285F92 /* FoodCollection.h */,
 				77C164BD1E7F1E5A00285F92 /* FoodCollection.m */,
+				67B092301E3E36C00011FCB5 /* RecipeCollectionViewController.h */,
+				67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */,
+				67B092331E3E3EA20011FCB5 /* DetailViewController.h */,
+				67B092341E3E3EA20011FCB5 /* DetailViewController.m */,
+				770666A01E82F33900DD4F1E /* FoodCell.h */,
+				770666A11E82F33900DD4F1E /* FoodCell.m */,
 				77F738E11E819D860016AD6B /* RecipeCollectionHeaderView.h */,
 				77F738E21E819D860016AD6B /* RecipeCollectionHeaderView.m */,
+				67B092221E3E32E80011FCB5 /* Assets.xcassets */,
+				67B092161E3E32E80011FCB5 /* Supporting Files */,
 			);
 			path = RecipePhoto;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				67B092321E3E36C00011FCB5 /* RecipeCollectionViewController.m in Sources */,
 				77C164BE1E7F1E5A00285F92 /* FoodCollection.m in Sources */,
 				67B0921E1E3E32E80011FCB5 /* ViewController.m in Sources */,
+				770666A21E82F33900DD4F1E /* FoodCell.m in Sources */,
 				77C164BB1E7F1DBA00285F92 /* Food.m in Sources */,
 				67B0921B1E3E32E80011FCB5 /* AppDelegate.m in Sources */,
 				67B092181E3E32E80011FCB5 /* main.m in Sources */,
