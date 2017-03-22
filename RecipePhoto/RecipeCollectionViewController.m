@@ -16,7 +16,7 @@
 @class DetailViewController;
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//DON'T FORGET TO CONTROL DRAG FROM ANYWHERE IN MAIN VIEW CONTROLLER TO THE TOP TO MAKE THE CONTROLLER THE DATA SOURCE AND DELEGATE
+//DON'T FORGET TO CONTROL DRAG FROM ANYWHERE IN MAIN VIEW CONTROLLER TO THE TOP TO MAKE THE CONTROLLER THE DATA SOURCE AND DELEGATE AND DON'T FORGET TO NAME THE SEGUE + DON'T FORGET TO IMPORT PICS
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
@@ -54,7 +54,8 @@
      
      if ([segue.identifier isEqualToString:@"showRecipePhoto"]) {
          
-         //Passes the element selected, so the array in this case would have only one element but it is possible to pass more than one item and this is the reason why it is stored in an array
+         //Passes the element selected, so the array in this case would have only one element but it is possible to pass
+         //more than one item and this is the reason why it is stored in an array
          NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
          
          // Get the new view controller using [segue destinationViewController].
