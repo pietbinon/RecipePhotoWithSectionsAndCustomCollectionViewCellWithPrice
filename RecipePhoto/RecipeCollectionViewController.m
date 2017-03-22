@@ -49,10 +49,12 @@
 #pragma mark - prepareForSegue
 
  // In a storyboard-based application, you will often want to do a little preparation before navigation
- // To connect the segue in storyboard, control drag from foodcell in scene to anywhere in detail view controller
+ // To connect the segue in storyboard, control drag from foodcell in scene to anywhere in detail view controller (Selection Segue: Show)
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
      
      if ([segue.identifier isEqualToString:@"showRecipePhoto"]) {
+         
+         //Passes the element selected, so the array in this case would have only one element but it is possible to pass more than one item and this is the reason why it is stored in an array
          NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
          
          // Get the new view controller using [segue destinationViewController].
