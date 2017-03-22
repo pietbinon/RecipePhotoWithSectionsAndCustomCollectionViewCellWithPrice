@@ -93,7 +93,7 @@
     UIImageView *recipeImageView = (UIImageView *)[cell viewWithTag:100];
     Food *foodselected = self.foods[indexPath.section][indexPath.row];
     recipeImageView.image = foodselected.image;
-    cell.label.text = [NSString stringWithFormat: @"Item #%d", (int)indexPath.item];
+    cell.label.text = [NSString stringWithFormat: @"Item #%d", (int)indexPath.item + 1];
     
     return cell;
 }

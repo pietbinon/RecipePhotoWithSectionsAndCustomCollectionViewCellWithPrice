@@ -76,20 +76,9 @@
 		67B092151E3E32E80011FCB5 /* RecipePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				67B0921F1E3E32E80011FCB5 /* Main.storyboard */,
-				77C164B91E7F1DBA00285F92 /* Food.h */,
-				77C164BA1E7F1DBA00285F92 /* Food.m */,
-				77C164BC1E7F1E5A00285F92 /* FoodCollection.h */,
-				77C164BD1E7F1E5A00285F92 /* FoodCollection.m */,
-				67B092301E3E36C00011FCB5 /* RecipeCollectionViewController.h */,
-				67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */,
-				67B092331E3E3EA20011FCB5 /* DetailViewController.h */,
-				67B092341E3E3EA20011FCB5 /* DetailViewController.m */,
-				770666A01E82F33900DD4F1E /* FoodCell.h */,
-				770666A11E82F33900DD4F1E /* FoodCell.m */,
-				77F738E11E819D860016AD6B /* RecipeCollectionHeaderView.h */,
-				77F738E21E819D860016AD6B /* RecipeCollectionHeaderView.m */,
-				67B092221E3E32E80011FCB5 /* Assets.xcassets */,
+				777E0E5D1E83270E0076B04F /* View */,
+				777E0E5E1E83272A0076B04F /* Controller */,
+				777E0E5F1E83274D0076B04F /* Model */,
 				67B092161E3E32E80011FCB5 /* Supporting Files */,
 			);
 			path = RecipePhoto;
@@ -99,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				67B092271E3E32E80011FCB5 /* Info.plist */,
-				67B092241E3E32E80011FCB5 /* LaunchScreen.storyboard */,
 				67B092191E3E32E80011FCB5 /* AppDelegate.h */,
 				67B0921A1E3E32E80011FCB5 /* AppDelegate.m */,
 				67B092171E3E32E80011FCB5 /* main.m */,
@@ -107,6 +95,42 @@
 				67B0921D1E3E32E80011FCB5 /* ViewController.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		777E0E5D1E83270E0076B04F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67B0921F1E3E32E80011FCB5 /* Main.storyboard */,
+				67B092221E3E32E80011FCB5 /* Assets.xcassets */,
+				67B092241E3E32E80011FCB5 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		777E0E5E1E83272A0076B04F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67B092301E3E36C00011FCB5 /* RecipeCollectionViewController.h */,
+				67B092311E3E36C00011FCB5 /* RecipeCollectionViewController.m */,
+				67B092331E3E3EA20011FCB5 /* DetailViewController.h */,
+				67B092341E3E3EA20011FCB5 /* DetailViewController.m */,
+				770666A01E82F33900DD4F1E /* FoodCell.h */,
+				770666A11E82F33900DD4F1E /* FoodCell.m */,
+				77F738E11E819D860016AD6B /* RecipeCollectionHeaderView.h */,
+				77F738E21E819D860016AD6B /* RecipeCollectionHeaderView.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		777E0E5F1E83274D0076B04F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77C164B91E7F1DBA00285F92 /* Food.h */,
+				77C164BA1E7F1DBA00285F92 /* Food.m */,
+				77C164BC1E7F1E5A00285F92 /* FoodCollection.h */,
+				77C164BD1E7F1E5A00285F92 /* FoodCollection.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
