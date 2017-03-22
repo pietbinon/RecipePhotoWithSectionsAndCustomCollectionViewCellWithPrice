@@ -15,6 +15,9 @@
 
 @class DetailViewController;
 
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//DON'T FORGET TO CONTROL DRAG FROM ANYWHERE IN MAIN VIEW CONTROLLER TO THE TOP TO MAKE THE CONTROLLER THE DATA SOURCE AND DELEGATE
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
@@ -28,8 +31,6 @@
 
 
 @implementation RecipeCollectionViewController
-
-//static NSString * const reuseIdentifier = @"Cell";
 
 
 - (void)viewDidLoad {
@@ -48,7 +49,7 @@
 #pragma mark - prepareForSegue
 
  // In a storyboard-based application, you will often want to do a little preparation before navigation
- // To connect the segue in storyboard, foodcell
+ // To connect the segue in storyboard, control drag from foodcell in scene to anywhere in detail view controller
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
      
      if ([segue.identifier isEqualToString:@"showRecipePhoto"]) {
