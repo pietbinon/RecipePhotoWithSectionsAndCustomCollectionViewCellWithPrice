@@ -50,6 +50,9 @@
 }
 
 
+
+
+#pragma mark - prepareForSegue
  // In a storyboard-based application, you will often want to do a little preparation before navigation
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
      if ([segue.identifier isEqualToString:@"showRecipePhoto"]) {
@@ -94,7 +97,7 @@
 }
 
 
-//provides the data for the collection view cells
+//Provides the data for the collection view cells
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
