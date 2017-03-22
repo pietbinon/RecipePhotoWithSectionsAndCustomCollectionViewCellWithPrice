@@ -48,6 +48,7 @@
 #pragma mark - prepareForSegue
 
  // In a storyboard-based application, you will often want to do a little preparation before navigation
+ // To connect the segue in storyboard, foodcell
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
      
      if ([segue.identifier isEqualToString:@"showRecipePhoto"]) {
@@ -91,7 +92,7 @@
     UIImageView *recipeImageView = (UIImageView *)[cell viewWithTag:100];
     Food *foodselected = self.foods[indexPath.section][indexPath.row];
     recipeImageView.image = foodselected.image;
-    cell.label.text = [NSString stringWithFormat: @"%d", (int)indexPath.item];
+    cell.label.text = [NSString stringWithFormat: @"Item #%d", (int)indexPath.item];
     
     return cell;
 }
@@ -104,9 +105,19 @@
     
     if (kind == UICollectionElementKindSectionHeader) {
         RecipeCollectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
-        NSString *title = [[NSString alloc]initWithFormat:@"Recipe Group #%li", indexPath.section + 1];
-        headerView.title.text = title;
         
+        NSString *labelText;
+        if (indexPath.section == 0) {
+            labelText = @"Main Dishes";
+        } else if (indexPath.section == 1) {
+            labelText = @"Desserts";
+        }
+        
+        //Do the following to have the header to display something like "Recipe Group #"
+        //NSString *title = [[NSString alloc]initWithFormat:@"Recipe Group #%li", indexPath.section + 1];
+        //headerView.title.text = title;
+        
+        headerView.title.text = labelText;
         reusableview = headerView;
     }
     return reusableview;
