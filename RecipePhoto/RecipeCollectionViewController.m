@@ -90,6 +90,10 @@
 //Provides the data for the collection view cells
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    //    indexPath has 2 components:
+    //    NSInteger section = indexPath.section;
+    //    NSInteger item = indexPath.item;
+    
     FoodCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"foodCell" forIndexPath:indexPath];
     
     // Configure the cell
@@ -117,7 +121,8 @@
             labelText = @"Desserts";
         }
         
-        //Do the following to have the header to display something like "Recipe Group #"
+        //Do the following to have the header to display something like "Recipe Group #" instead of the above
+        //NSString *labeltext
         //NSString *title = [[NSString alloc]initWithFormat:@"Recipe Group #%li", indexPath.section + 1];
         //headerView.title.text = title;
         
