@@ -14,7 +14,8 @@
 
 @property (nonatomic) UIImage *image;
 @property (nonatomic) NSString *descriptionFood;
+@property (nonatomic) NSString *priceLabel;
 
-- (instancetype)initWithDescription: (NSString *) description andImage: (UIImage *) image;
+- (instancetype)initWithDescription: (NSString *) description price: (NSString *) price andImage: (UIImage *) image;
 
 @end

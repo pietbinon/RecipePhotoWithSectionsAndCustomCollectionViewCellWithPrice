@@ -36,26 +36,26 @@
 
 
     
-    Food *foodA = [[Food alloc] initWithDescription: @"Hamburger" andImage: [UIImage imageNamed: @"hamburger.jpg"]];
-    Food *foodB = [[Food alloc] initWithDescription: @"Risotto" andImage: [UIImage imageNamed: @"mushroom_risotto.jpg"]];
-    Food *foodC = [[Food alloc] initWithDescription: @"Curry" andImage: [UIImage imageNamed: @"vegetable_curry.jpg"]];
-    Food *foodD = [[Food alloc] initWithDescription: @"Eggs Benedicte" andImage: [UIImage imageNamed: @"egg_benedict.jpg"]];
-    Food *foodE = [[Food alloc] initWithDescription: @"Full Breakfast" andImage: [UIImage imageNamed: @"full_breakfast.jpg"]];
-    Food *foodF = [[Food alloc] initWithDescription: @"Ham & Cheese Panini" andImage: [UIImage imageNamed: @"ham_and_cheese_panini.jpg"]];
-    Food *foodG = [[Food alloc] initWithDescription: @"Ham & Cheese Sandwich" andImage: [UIImage imageNamed: @"ham_and_egg_sandwich.jpg"]];
-    Food *foodH = [[Food alloc] initWithDescription: @"Instant Noodle With Egg" andImage: [UIImage imageNamed: @"instant_noodle_with_egg.jpg"]];
-    Food *foodI = [[Food alloc] initWithDescription: @"Japanese Noodle With Pork" andImage: [UIImage imageNamed: @"japanese_noodle_with_pork.jpg"]];
-    Food *foodJ = [[Food alloc] initWithDescription: @"Noodle with Barbecue Pork" andImage: [UIImage imageNamed: @"noodle_with_bbq_pork.jpg"]];
+    Food *foodA = [[Food alloc] initWithDescription: @"Hamburger" price: @"8.95" andImage: [UIImage imageNamed: @"hamburger.jpg"]];
+    Food *foodB = [[Food alloc] initWithDescription: @"Risotto" price: @"15.95" andImage: [UIImage imageNamed: @"mushroom_risotto.jpg"]];
+    Food *foodC = [[Food alloc] initWithDescription: @"Curry" price: @"11.95" andImage: [UIImage imageNamed: @"vegetable_curry.jpg"]];
+    Food *foodD = [[Food alloc] initWithDescription: @"Eggs Benedicte" price: @"13.95" andImage: [UIImage imageNamed: @"egg_benedict.jpg"]];
+    Food *foodE = [[Food alloc] initWithDescription: @"Full Breakfast" price: @"12.95" andImage: [UIImage imageNamed: @"full_breakfast.jpg"]];
+    Food *foodF = [[Food alloc] initWithDescription: @"Ham & Cheese Panini" price: @"7.95" andImage: [UIImage imageNamed: @"ham_and_cheese_panini.jpg"]];
+    Food *foodG = [[Food alloc] initWithDescription: @"Ham & Cheese Sandwich" price: @"6.95" andImage: [UIImage imageNamed: @"ham_and_egg_sandwich.jpg"]];
+    Food *foodH = [[Food alloc] initWithDescription: @"Instant Noodle With Egg" price: @"4.95" andImage: [UIImage imageNamed: @"instant_noodle_with_egg.jpg"]];
+    Food *foodI = [[Food alloc] initWithDescription: @"Japanese Noodle With Pork" price: @"6.95" andImage: [UIImage imageNamed: @"japanese_noodle_with_pork.jpg"]];
+    Food *foodJ = [[Food alloc] initWithDescription: @"Noodle with Barbecue Pork" price: @"8.95" andImage: [UIImage imageNamed: @"noodle_with_bbq_pork.jpg"]];
     
     NSArray *mainDish = @[foodA, foodB, foodC, foodD, foodE, foodF, foodG, foodH, foodI, foodJ];
 
     
-    Food *foodK = [[Food alloc] initWithDescription: @"Angry Birds Cake" andImage: [UIImage imageNamed: @"angry_birds_cake.jpg"]];
-    Food *foodL = [[Food alloc] initWithDescription: @"Creme Brulee" andImage: [UIImage imageNamed: @"creme_brelee.jpg"]];
-    Food *foodM = [[Food alloc] initWithDescription: @"Starbucks Coffee" andImage: [UIImage imageNamed: @"starbucks_coffee.jpg"]];
-    Food *foodN = [[Food alloc] initWithDescription: @"Green Tea" andImage: [UIImage imageNamed: @"green_tea.jpg"]];
-    Food *foodO = [[Food alloc] initWithDescription: @"Thai Shrimo Cake" andImage: [UIImage imageNamed: @"thai_shrimp_cake.jpg"]];
-    Food *foodP = [[Food alloc] initWithDescription: @"White Chocolate Donut" andImage: [UIImage imageNamed: @"white_chocolate_donut.jpg"]];
+    Food *foodK = [[Food alloc] initWithDescription: @"Angry Birds Cake" price: @"19.95" andImage: [UIImage imageNamed: @"angry_birds_cake.jpg"]];
+    Food *foodL = [[Food alloc] initWithDescription: @"Creme Brulee" price: @"13.95" andImage: [UIImage imageNamed: @"creme_brelee.jpg"]];
+    Food *foodM = [[Food alloc] initWithDescription: @"Starbucks Coffee" price: @"1.95" andImage: [UIImage imageNamed: @"starbucks_coffee.jpg"]];
+    Food *foodN = [[Food alloc] initWithDescription: @"Green Tea" price: @"1.95" andImage: [UIImage imageNamed: @"green_tea.jpg"]];
+    Food *foodO = [[Food alloc] initWithDescription: @"Thai Shrimo Cake" price: @"3.95" andImage: [UIImage imageNamed: @"thai_shrimp_cake.jpg"]];
+    Food *foodP = [[Food alloc] initWithDescription: @"White Chocolate Donut" price: @"0.95" andImage: [UIImage imageNamed: @"white_chocolate_donut.jpg"]];
 
 
     

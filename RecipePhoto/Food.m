@@ -12,12 +12,13 @@
 
 @implementation Food
 
-- (instancetype)initWithDescription: (NSString *) description andImage: (UIImage *) image
+- (instancetype)initWithDescription: (NSString *) description price: (NSString *) price andImage: (UIImage *) image
 {
     self = [super init];
     if (self) {
         _descriptionFood = description;
         _image = image;
+        _priceLabel = price;
     }
     return self;
 }
@@ -25,7 +26,7 @@
 
 - (instancetype)init
 {
-    return [self initWithDescription: @"" andImage: nil];
+    return [self initWithDescription: @"" price: @"" andImage: nil];
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RecipeCollectionHeaderView.h"
+#import "FoodCell.h"
 
 
 
