@@ -15,9 +15,6 @@
 
 @class DetailViewController;
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//DON'T FORGET TO CONTROL DRAG FROM ANYWHERE IN MAIN VIEW CONTROLLER TO THE TOP TO MAKE THE CONTROLLER THE DATA SOURCE AND DELEGATE AND DON'T FORGET TO NAME THE SEGUE + DON'T FORGET TO IMPORT PICS
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
