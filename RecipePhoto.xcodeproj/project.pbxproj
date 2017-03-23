@@ -76,8 +76,8 @@
 		67B092151E3E32E80011FCB5 /* RecipePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				777E0E5D1E83270E0076B04F /* View */,
 				777E0E5F1E83274D0076B04F /* Model */,
+				777E0E5D1E83270E0076B04F /* View */,
 				777E0E5E1E83272A0076B04F /* Controller */,
 				67B092161E3E32E80011FCB5 /* Supporting Files */,
 			);
